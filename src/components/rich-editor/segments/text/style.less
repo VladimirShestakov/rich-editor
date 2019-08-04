@@ -1,0 +1,38 @@
+.SegmentText {
+
+  ///padding: 2px;
+
+  &-char{
+    //letter-spacing: -0.05px;
+  }
+
+  &__select{
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    background: rgb(148, 37, 255);
+    position: absolute;
+    display: block;
+    z-index: -1;
+  }
+
+  &__after{
+    vertical-align: top;
+    background: #2500ff;
+    width: 0px;
+    height: 0px;
+    display: none;
+    visibility: hidden;
+    white-space: nowrap;
+  }
+  &__before{
+    vertical-align: bottom;
+    background: #00ff70;
+    width: 0px;
+    height: 0px;
+    display: none;
+    visibility: hidden;
+    white-space: nowrap;
+  }
+}

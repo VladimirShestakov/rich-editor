@@ -1,0 +1,30 @@
+.SegmentCursor {
+  position: relative;
+  //outline: 1px solid #f00;
+  white-space: nowrap;
+
+  &__after{
+    position: absolute;
+    width: 2px;
+    overflow: hidden;
+    color: transparent;
+    background-color: black;
+    content:'|';
+    //outline: 1px solid #0007ff;
+    top: 0px;
+    //bottom:-2px;
+    -webkit-animation: blink 1070ms step-start infinite;
+    animation: blink 1070ms step-start infinite;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% { background-color: rgb(34, 34, 34); }
+  51% { background-color: rgba(34, 34, 34, 0); }
+  100% { background-color: rgba(34, 34, 34, 0); }
+}
+@keyframes blink {
+  50% { background-color: rgb(34, 34, 34); }
+  51% { background-color: rgba(34, 34, 34, 0); }
+  100% { background-color: rgba(34, 34, 34, 0); }
+}

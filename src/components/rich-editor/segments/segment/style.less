@@ -1,0 +1,32 @@
+.Segment {
+  //position: relative;
+  &__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: -0.01px;
+    transform: translateY(-1px);
+    color: rgba(0,0,0,0);
+  }
+  &__caret{
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    content:'';
+    top:-1px;
+    bottom:-2px;
+    -webkit-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% { background-color: rgb(34, 34, 34); }
+  51% { background-color: rgba(34, 34, 34, 0); }
+  100% { background-color: rgba(34, 34, 34, 0); }
+}
+@keyframes blink {
+  50% { background-color: rgb(34, 34, 34); }
+  51% { background-color: rgba(34, 34, 34, 0); }
+  100% { background-color: rgba(34, 34, 34, 0); }
+}
